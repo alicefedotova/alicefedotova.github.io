@@ -1,0 +1,90 @@
+<p>Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!</p>
+
+<h2 id="ideation">Ideation</h2>
+
+<p>Hugo Blox supports a Markdown extension for mindmaps.</p>
+
+<p>Simply insert a Markdown code block labelled as <code class="language-plaintext highlighter-rouge">markmap</code> and optionally set the height of the mindmap as shown in the example below.</p>
+
+<p>Mindmaps can be created by simply writing the items as a Markdown list within the <code class="language-plaintext highlighter-rouge">markmap</code> code block, indenting each item to create as many sub-levels as you need:</p>
+
+<div class="highlight">
+<pre class="chroma">
+<code>
+```markmap {height="200px"}
+- Hugo Modules
+  - Hugo Blox
+  - blox-plugins-netlify
+  - blox-plugins-netlify-cms
+  - blox-plugins-reveal
+```
+</code>
+</pre>
+</div>
+
+<p>renders as</p>
+
+<p>```markmap {height=”200px”}</p>
+<ul>
+  <li>Hugo Modules
+    <ul>
+      <li>Hugo Blox</li>
+      <li>blox-plugins-netlify</li>
+      <li>blox-plugins-netlify-cms</li>
+      <li>blox-plugins-reveal
+```</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="diagrams">Diagrams</h2>
+
+<p>Hugo Blox supports the <em>Mermaid</em> Markdown extension for diagrams.</p>
+
+<p>An example <strong>Gantt diagram</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+```
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+</code></pre>
+
+<h2 id="todo-lists">Todo lists</h2>
+
+<p>You can even write your todo lists in Markdown too:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [x] Write math example
+<span class="p">  -</span> [x] Write diagram example
+<span class="p">-</span> [ ] Do something else
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Write math example
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Write diagram example</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Do something else</li>
+</ul>
+
+<h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌</h2>

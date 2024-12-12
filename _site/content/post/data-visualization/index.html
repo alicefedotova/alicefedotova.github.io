@@ -1,0 +1,138 @@
+<p>Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.</p>
+
+<p>Use popular tools such as Plotly, Mermaid, and data frames.</p>
+
+<h2 id="charts">Charts</h2>
+
+<p>Hugo Blox supports the popular <a href="https://plot.ly/">Plotly</a> format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!</p>
+
+<p>Save your Plotly JSON in your page folder, for example <code class="language-plaintext highlighter-rouge">line-chart.json</code>, and then add the `` shortcode where you would like the chart to appear.</p>
+
+<p>Demo:</p>
+
+<p>You might also find the <a href="http://plotly-json-editor.getforge.io/">Plotly JSON Editor</a> useful.</p>
+
+<h2 id="diagrams">Diagrams</h2>
+
+<p>Hugo Blox supports the <em>Mermaid</em> Markdown extension for diagrams.</p>
+
+<p>An example <strong>flowchart</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+graph TD
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]
+```
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">graph TD
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]
+</code></pre>
+
+<p>An example <strong>sequence diagram</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+```
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+</code></pre>
+
+<p>An example <strong>class diagram</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+```
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+</code></pre>
+
+<p>An example <strong>state diagram</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+stateDiagram
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]
+```
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<pre><code class="language-mermaid">stateDiagram
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]
+</code></pre>
+
+<h2 id="data-frames">Data Frames</h2>
+
+<p>Save your spreadsheet as a CSV file in your page’s folder and then render it by adding the <em>Table</em> shortcode to your page:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>renders as</p>
+
+<h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌</h2>
