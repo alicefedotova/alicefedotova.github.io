@@ -7,7 +7,7 @@ name_pronunciation: aˈlitʃe feˈdɔtovə
 
 # Full name (for SEO)
 first_name: Alice
-last_name: Fedo
+last_name: Fedotova
 
 # Status emoji
 status:
