@@ -75,18 +75,19 @@ education:
     date_end: 2020-10-02
     summary: |
       Final Grade: 109/110
+
       Previously referred to as Intercultural and Linguistic Mediation. Spent one semester abroad as part of the Overseas exchange program, taking courses at the [Higher School of Economics (Высшая Школа Экономики)](https://www.hse.ru/en/).
 
       Courses included:
+      - Computational Linguistics
       - Computer-Assisted Translation
       - Translation and Liaison Interpreting
-      - General and Applied Linguistics
 
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
+  - position: Research Fellow
+    company_name: University of Bologna
+    company_url: 'https://www.unibo.it/'
+    icon: hero/circle-stack
     date_start: 2021-01-01
     date_end: ''
     summary: |2-
