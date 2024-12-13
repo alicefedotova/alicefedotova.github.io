@@ -3,7 +3,7 @@
 title: Alice Fedotova
 
 # Name pronunciation (optional)
-name_pronunciation: aˈlitʃe feˈdɔtovə
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Alice
@@ -24,17 +24,17 @@ role: Language Technology Consultant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: ''
+  - name: 'Freelance'
     url: ''
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:alice.fedotova7@gmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://x.com/call_me_ffedox
   - icon: brands/instagram
     url: https://www.instagram.com/
   - icon: brands/github
