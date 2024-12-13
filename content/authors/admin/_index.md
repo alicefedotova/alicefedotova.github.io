@@ -88,9 +88,9 @@ work:
     company_name: University of Bologna
     company_url: 'https://www.unibo.it/'
     icon: hero/circle-stack
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
+    date_start: 2023-10-01
+    date_end: 2024-10-01
+    summary: |
       Responsibilities include:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
