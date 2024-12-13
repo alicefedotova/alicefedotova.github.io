@@ -184,4 +184,4 @@ awards:
 
 ## About Me
 
-Alice Fedotova is an independent researcher and a freelance consultant in the field of Natural Language Processing. She is a former Research Fellow at the University of Bologna, where she worked on Automatic Speech Recognition and multimodal Transformer models. Her research interests include Information Extraction, Resource Creation for Machine Learning approaches, and Multimodality. She is a member of [AILC](https://www.ai-lc.it/en/), the Italian Association of Computational Linguistics, and she's currently working on Early Risk Detection of mental health disorders.
+Alice Fedotova is an independent researcher and a freelance consultant in the field of Natural Language Processing. She is a former Research Fellow at the University of Bologna, where she worked on Automatic Speech Recognition and multimodal Transformer models. Her research interests include Information Extraction, Resource Creation for Machine Learning approaches, and Multimodality. Since 2024, she is a member of [AILC](https://www.ai-lc.it/en/), the Italian Association of Computational Linguistics.
