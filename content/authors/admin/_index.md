@@ -52,7 +52,7 @@ interests:
   - Language Resources
 
 education:
-  - area: MA Translation Technology
+  - area: MA in Translation Technology
     institution: University of Bologna
     date_start: 2021-10-01
     date_end: 2023-07-13
@@ -69,7 +69,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://amslaurea.unibo.it/id/eprint/29006/1/Alice_Fedotova_Dissertation.pdf'
-  - area: BA Languages and Technologies for Intercultural communication
+  - area: BA in Languages and Technologies for Intercultural communication
     institution: University of Bologna
     date_start: 2017-10-01
     date_end: 2020-10-02
