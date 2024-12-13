@@ -3,7 +3,7 @@
 title: Alice Fedotova
 
 # Name pronunciation (optional)
-name_pronunciation: ''
+name_pronunciation: aˈlitʃe feˈdɔtovə
 
 # Full name (for SEO)
 first_name: Alice
