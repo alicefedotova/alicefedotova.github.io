@@ -57,7 +57,7 @@ education:
     date_start: 2021-10-01
     date_end: 2023-07-13
     summary: |
-      Thesis on _Multimodal Classification of Audiovisual Content_. Supervised by [Prof Alberto Barrón-Cedeño](https://www.unibo.it/sitoweb/a.barron). Presented one paper at the [14th Media Mutations International Conference](https://www.mediamutations.org/) and collaborated on a paper presented at the [International Conference on Computational Linguistics, Language Resources and Evaluation](https://lrec-coling-2024.org/).
+      Thesis on _Multimodal Classification of Audiovisual Content_. Supervised by [Prof Alberto Barrón-Cedeño](https://www.unibo.it/sitoweb/a.barron). Presented one paper at the [14th Media Mutations International Conference](https://www.mediamutations.org/) and collaborated on a paper presented at [LREC-COLING 2024](https://lrec-coling-2024.org/).
     button:
       text: 'Read Thesis'
       url: 'https://amslaurea.unibo.it/id/eprint/29006/1/Alice_Fedotova_Dissertation.pdf'
