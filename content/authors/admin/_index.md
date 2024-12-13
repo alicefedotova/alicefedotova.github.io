@@ -24,8 +24,8 @@ role: Language Technology Consultant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: 'Freelance'
-    url: ''
+  - name: 'Former Research Fellow @UniBo'
+    url: 'https://www.unibo.it/sitoweb/alice.fedotova2/contenuti-utili'
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -35,16 +35,16 @@ profiles:
     label: E-mail Me
   - icon: brands/x
     url: https://x.com/call_me_ffedox
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/alicefedotova
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/alice-fedotova/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
+  - icon: academicons/arxiv
+    url: https://arxiv.org/search/cs?searchtype=author&query=Fedotova,+A
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0001-4850-0974
 
 interests:
   - Artificial Intelligence
