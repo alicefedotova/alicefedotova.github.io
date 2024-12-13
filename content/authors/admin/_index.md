@@ -49,7 +49,8 @@ profiles:
 interests:
   - Natural Language Processing
   - Computational Linguistics
-  - Language Resources
+  - Creation of Resources
+  - Language Data Analysis
 
 education:
   - area: MA in Translation Technology
@@ -76,7 +77,7 @@ education:
     summary: |
       Final Grade: 109/110
 
-      Previously referred to as Intercultural and Linguistic Mediation. Spent one semester abroad as part of the Overseas exchange program, taking courses at the [Higher School of Economics (Высшая Школа Экономики)](https://www.hse.ru/en/).
+      Previously referred to as "Intercultural and Linguistic Mediation". Spent one semester abroad as part of the Overseas exchange program, taking courses at the [Higher School of Economics (Высшая Школа Экономики)](https://www.hse.ru/en/).
 
       Courses included:
       - Computational Linguistics
@@ -183,4 +184,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Alice Fedotova is an independent researcher and a freelance consultant in the field of Natural Language Processing. She is a former Research Fellow at the University of Bologna, where she worked on Automatic Speech Recognition and multimodal Transformer models. Her research interests include Information Extraction, Resource Creation for Machine Learning approaches, and Multimodality. She is a member of [AILC](https://www.ai-lc.it/en/), the Italian Association of Computational Linguistics, and she's currently working on Early Risk Detection of mental health disorders.
