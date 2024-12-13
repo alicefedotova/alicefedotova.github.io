@@ -47,20 +47,20 @@ profiles:
     url: https://orcid.org/0009-0001-4850-0974
 
 interests:
-  - Artificial Intelligence
+  - Natural Language Processing
   - Computational Linguistics
-  - Information Retrieval
+  - Language Resources
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MA Translation Technology
+    institution: University of Bologna
+    date_start: 2021-10-01
+    date_end: 2023-07-13
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on _Multimodal Classification of Audiovisual Content_. Supervised by [Prof Alberto Barrón-Cedeño](https://www.unibo.it/sitoweb/a.barron). Presented one paper at the [14th Media Mutations International Conference](https://www.mediamutations.org/) and collaborated on a paper presented at the [International Conference on Computational Linguistics, Language Resources and Evaluation](https://lrec-coling-2024.org/).
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
+      url: 'https://amslaurea.unibo.it/id/eprint/29006/1/Alice_Fedotova_Dissertation.pdf'
   - area: MEng Artificial Intelligence
     institution: Massachusetts Institute of Technology
     date_start: 2016-01-01
