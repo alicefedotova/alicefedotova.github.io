@@ -57,32 +57,31 @@ education:
     date_start: 2021-10-01
     date_end: 2023-07-13
     summary: |
-      Thesis on _Multimodal Classification of Audiovisual Content_. Supervised by [Prof Alberto Barrón-Cedeño](https://www.unibo.it/sitoweb/a.barron). Presented one paper at the [14th Media Mutations International Conference](https://www.mediamutations.org/) and collaborated with UniBo's [Language Technologies Lab](https://site.unibo.it/nlp/en).
+      Final Grade: 110/110 with Honors
+
+      Thesis on _Multimodal Classification of Audiovisual Content_. Supervised by [Prof Alberto Barrón-Cedeño](https://www.unibo.it/sitoweb/a.barron). Presented one paper at the [14th Media Mutations International Conference](https://www.mediamutations.org/) and worked with UniBo's [Language Technologies Lab](https://site.unibo.it/nlp/en).
+
+      Courses included:
+      - Natural Language Processing
+      - Quantitative Data Analysis
+      - Python and R Programming
+
     button:
       text: 'Read Thesis'
       url: 'https://amslaurea.unibo.it/id/eprint/29006/1/Alice_Fedotova_Dissertation.pdf'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BA Languages and Technologies for Intercultural communication
+    institution: University of Bologna
+    date_start: 2017-10-01
+    date_end: 2020-10-02
     summary: |
-      GPA: 3.8/4.0
+      Final Grade: 109/110
+      Previously referred to as Intercultural and Linguistic Mediation. Spent one semester abroad as part of the Overseas exchange program, taking courses at the [Higher School of Economics (Высшая Школа Экономики)](https://www.hse.ru/en/).
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Computer-Assisted Translation
+      - Translation and Liaison Interpreting
+      - General and Applied Linguistics
+
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin

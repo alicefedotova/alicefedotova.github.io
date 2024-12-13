@@ -1,52 +1,275 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# easyindex-cli  <!-- omit in toc -->
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+<p align="center">
+  English •
+  <a href="README-ja.md">日本語 (Japanese)</a>
+</p>
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+`easyindex-cli` makes super easy to use Google Index API and IndexNow API!!
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+![Demo](demo.gif)
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## index  <!-- omit in toc -->
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+- [preinstall](#preinstall)
+- [required](#required)
+- [install](#install)
+- [Usage](#usage)
+  - [Google](#google)
+    - [quickstart](#quickstart)
+    - [basic usage](#basic-usage)
+    - [set quota](#set-quota)
+    - [bulk request (updated \& deleted)](#bulk-request-updated--deleted)
+  - [IndexNow](#indexnow)
+    - [quickstart](#quickstart-1)
+    - [basic usage](#basic-usage-1)
+    - [set quota](#set-quota-1)
+    - [use csv](#use-csv)
+  - [Google \& IndexNow](#google--indexnow)
+  - [Use as Golang package](#use-as-golang-package)
+- [Parameters](#parameters)
+  - [common](#common)
+  - [Google indexing API](#google-indexing-api)
+  - [IndexNow API](#indexnow-api)
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+## preinstall
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+- create Google service account
+- create credential json file for Google Indexing API
+- add your service account as a site owner on search console
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+ref. [Google Search Central](https://developers.google.com/search/apis/indexing-api/v3/prereqs)
 
-## We ask you, humbly, to support this open source movement
+## required
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+- Google service account
+- credential json file for Google Indexing API
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## install
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+Mac/Linux:
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+```sh
+wget -O- https://github.com/usk81/easyindex-cli/releases/download/v{version}/easyindex-cli_{version}_{os}.tar.gz | tar xz
+# e.g.
+# mac M1 / version v1.0.1
+# wget -O- https://github.com/usk81/easyindex-cli/releases/download/v1.0.1/easyindex-cli_1.0.1_darwin_amd64.tar.gz | tar xz
+```
 
-## Demo image credits
+Windows (PowerShell):
 
-- [Unsplash](https://unsplash.com)
+```sh
+iwr -outf easyindex-cli.tar.gz https://github.com/usk81/easyindex-cli/releases/download/v{version}/easyindex-cli_{version}_{os}.tar.gz
+# e.g.
+# 64bit / version v1.0.1
+# iwr -outf easyindex-cli.tar.gz https://github.com/usk81/easyindex-cli/releases/download/v1.0.1/easyindex-cli_1.0.1_windows_amd64.tar.gz
+```
 
-## Latest news
+## Usage
 
-<!--START_SECTION:news-->
+### Google
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+#### quickstart
+
+updated:
+
+```sh
+# Mac / Linux:
+easyindex-cli google publish updated -C (your credential json file path) https://example.com/foobar https://example.com/fizzbizz
+ 
+# Windows:
+easyindex-cli.exe google publish updated -C (your credential json file path) https://example.com/foobar https://example.com/fizzbizz
+```
+
+deleted:
+
+```sh
+# Mac / Linux:
+easyindex-cli google publish deleted -C (your credential json file path) https://example.com/foobar https://example.com/fizzbizz
+ 
+# Windows:
+easyindex-cli.exe google publish deleted -C (your credential json file path) https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### basic usage
+
+> :smile:NOTE:  
+>   You can omit specifying the credential file path by setting it in an environment variable (`EASYINDEX_CREDENTIAL_PATH`).
+
+updated:
+
+```sh
+# Mac /Linux:
+easyindex-cli google publish updated https://example.com/foobar https://example.com/fizzbizz
+
+# Windows:
+easyindex-cli.exe google publish updated https://example.com/foobar https://example.com/fizzbizz
+```
+
+deleted:
+
+```sh
+# Mac /Linux:
+easyindex-cli google publish updated https://example.com/foobar https://example.com/fizzbizz
+
+# Windows:
+easyindex-cli.exe google publish updated https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### set quota
+
+> You can limit the number of requests.
+>
+> Please set based on the quota of Google Indexing API.
+
+```sh
+# Mac /Linux:
+easyindex-cli google publish updated -l 200 https://example.com/foobar https://example.com/fizzbizz
+
+# Windows:
+easyindex-cli.exe google publish updated -l 200 https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### bulk request (updated & deleted)
+
+```sh
+# Mac / Linux:
+easyindex-cli google publish --csv index.csv
+ 
+# Windows:
+easyindex-cli.exe google publish --csv index.csv
+```
+
+CSV format:
+
+e.g.
+
+```csv
+notification_type,url
+URL_UPDATED,https://example.com/20da2710-e370-49e3-9ac8-c322007379a5
+URL_DELETED,https://example.com/a949a013-9a11-492d-863f-45c3008ef43f
+URL_UPDATED,https://example.com/f0e6e237-18f3-4857-88ea-c0dd1d26a5ce
+```
+
+### IndexNow
+
+#### quickstart
+
+```sh
+# Mac / Linux:
+easyindex-cli indexnow \
+-H https://example.com \
+-k 978c7955fdd547848fd3901ba4321e24 \
+-f https://example.com/978c7955fdd547848fd3901ba4321e24.txt \
+-e https://www.bing.com \
+https://example.com/foobar https://example.com/fizzbizz
+ 
+# Windows:
+easyindex-cli.exe indexnow
+-H https://example.com 
+-k 978c7955fdd547848fd3901ba4321e24 
+-f https://example.com/978c7955fdd547848fd3901ba4321e24.txt 
+-e https://www.bing.com 
+https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### basic usage
+
+> :smile:NOTE:  
+>   You need to specify some required parameters with flags, but you can omit them by setting them all as environment variables.
+
+```sh
+# Mac / Linux:
+easyindex-cli indexnow https://example.com/foobar https://example.com/fizzbizz
+ 
+# Windows:
+easyindex-cli.exe indexnow https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### set quota
+
+```sh
+# Mac / Linux:
+easyindex-cli indexnow -q 1000 https://example.com/foobar https://example.com/fizzbizz
+ 
+# Windows:
+easyindex-cli.exe indexnow -q 1000 https://example.com/foobar https://example.com/fizzbizz
+```
+
+#### use csv
+
+```sh
+# Mac / Linux:
+easyindex-cli indexnow --csv index.csv
+ 
+# Windows:
+easyindex-cli.exe indexnow --csv index.csv
+```
+
+CSV format:
+
+e.g.
+
+```csv
+url
+https://example.com/20da2710-e370-49e3-9ac8-c322007379a5
+https://example.com/a949a013-9a11-492d-863f-45c3008ef43f
+https://example.com/f0e6e237-18f3-4857-88ea-c0dd1d26a5ce
+```
+
+### Google & IndexNow
+
+> :smile:NOTE:  
+>   You need to specify some required parameters with flags, but you can omit them by setting them all as environment variables.
+
+```sh
+# Mac / Linux:
+easyindex-cli publish --csv index.csv
+ 
+# Windows:
+easyindex-cli.exe publish --csv index.csv
+```
+
+CSV format:
+
+e.g.
+
+```csv
+notification_type,url
+URL_UPDATED,https://example.com/20da2710-e370-49e3-9ac8-c322007379a5
+URL_DELETED,https://example.com/a949a013-9a11-492d-863f-45c3008ef43f
+URL_UPDATED,https://example.com/f0e6e237-18f3-4857-88ea-c0dd1d26a5ce
+```
+
+### Use as Golang package
+
+ref. [core package](https://github.com/usk81/easyindex)
+
+## Parameters
+
+### common
+
+| requred | environment variables | flag | flag-shorthand | default | description |
+|---|---|---|---|---|---|
+| :x: | - | help | h | - | Help about any command |
+| :x: | - | csv | c | false | CSV file path to request |
+| :x: | - | json | j | false | JSON file path to request |
+| :x: | `EASYINDEX_DEBUG` | debug | d | false | output debug logs |
+| :x: | `EASYINDEX_IGNORE_PRECHECK` | ignore-precheck | i | false | ignore pre-check |
+
+### Google indexing API
+
+| requred | environment variables | flag | flag-shorthand | default | description |
+|---|---|---|---|---|---|
+| :o: | `EASYINDEX_GOOGLE_CREDENTIALS_PATH` | google-credentials | C | credentials.json | Google credential file path |
+| :o: | `EASYINDEX_GOOGLE_REQUEST_LIMIT` | google-limit | l | 200 | number of Google Index Publishing API Request limit |
+
+### IndexNow API
+
+| requred | environment variables | flag | flag-shorthand | default | description |
+|---|---|---|---|---|---|
+| :o: | `EASYINDEX_INDEXNOW_HOST` | indexnow-host | H | (empty) | your web site domain |
+| :o: | `EASYINDEX_INDEXNOW_KEY` | indexnow-key | k | (empty) | IndexNow key |
+| :o: | `EASYINDEX_INDEXNOW_KEY_LOCATION` | indexnow-keyfile | f | (empty) | IndexNow key file location |
+| :x: | `EASYINDEX_INDEXNOW_REQUEST_LIMIT` | indexnow-limit | q | (empty) | number of IndexNow API Request limit |
+| :o: | `EASYINDEX_INDEXNOW_SEARCH_ENGINE` | indexnow-searchengine | e | (empty) | IndexNow target search engine URL |

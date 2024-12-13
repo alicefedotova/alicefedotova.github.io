@@ -1,0 +1,21 @@
+easyindex-cli google publish updated -C /home/carlo/Desktop/My Website/ffedox.github.io/linkedin-indexing-7ecb5da5dd50.json https://ffedox.github.io/
+
+
+
+wget -O- https://github.com/usk81/easyindex-cli/releases/download/v1.0.1/easyindex-cli_1.0.1_darwin_amd64.tar.gz | tar xz
+
+
+
+wget -O- https://github.com/usk81/easyindex-cli/releases/download/v1.0.6/easyindex-cli_1.0.6_linux_amd64.tar.gz | tar xz
+
+
+easyindex-cli google publish updated -C "/home/carlo/Desktop/My Newest Website/alicefedotova.github.io/alice-fedotova-db144a6cfbe7.json" https://alicefedotova.github.io/
+
+
+https://github.com/usk81/easyindex-cli/
+
+alice-fedotova@alice-fedotova.iam.gserviceaccount.com
+
+
+
+./easyindex-cli google publish updated -C "/home/carlo/Desktop/My Newest Website/alicefedotova.github.io/alice-fedotova-db144a6cfbe7.json" https://alicefedotova.github.io/

@@ -1,0 +1,4 @@
+title: Alice Fedotova Website
+description: A website about me and what I do
+baseurl: "" # or "/subpath" if the site is hosted in a subdirectory
+url: "https://alicefedotova.github.io" # Update to your site's URL
